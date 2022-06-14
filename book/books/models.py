@@ -8,7 +8,7 @@ class Books:
     genero = models.ForeignKey
     price = models.DecimalField(max_length=6, decimal_places=2)
     visible = models.BooleanField(default=True)
-    
+
     def __str__(self):
         return self.titulo
 
