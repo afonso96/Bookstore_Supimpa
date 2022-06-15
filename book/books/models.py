@@ -5,7 +5,6 @@ class Author:
     author = models.CharField(max_length=150, unique=True, db_index=models.CASCADE)
 
 
-
 class Genero:
     genero = models.CharField(max_length=100, unique=True, db_index=models.CASCADE)
 
