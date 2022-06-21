@@ -18,7 +18,11 @@ from django.urls import path, include
 
 from books.urls import books_router
 
+
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include(books_router.urls))
+    path("", include(books_router.urls)),
+
 ]
+
+
