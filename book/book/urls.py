@@ -17,11 +17,14 @@ from django.contrib import admin
 from django.urls import path, include
 
 from books.urls import books_router
+from warehouse.urls import warehouse_router
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include(books_router.urls)),
+    path("", include(warehouse_router.urls)),
+
 
 ]
 
