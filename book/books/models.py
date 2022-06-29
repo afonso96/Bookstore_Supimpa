@@ -7,6 +7,7 @@ class Author(models.Model):
 
 class Genre(models.Model):
     genre = models.CharField(max_length=100, unique=True, db_index=True)
+    image = models.ImageField()
 
 
 class Books(models.Model):
